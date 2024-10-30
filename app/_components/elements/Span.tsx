@@ -8,7 +8,7 @@ interface SpanProps {
 export const Span = ({ children, className = "" }: SpanProps) => {
   return (
     <span
-      className={`bg-clip-text bg-gradient-to-r from-blueColor to-violetColor ${className}`}
+      className={`text-transparent bg-clip-text bg-gradient-to-r from-blueColor to-violetColor ${className}`}
     >
       {children}
     </span>

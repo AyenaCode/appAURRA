@@ -1,0 +1,1 @@
+enlève les annimations et converti le code et ts sans utiliser react.FC

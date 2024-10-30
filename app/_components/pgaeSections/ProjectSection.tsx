@@ -157,12 +157,12 @@ export const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
+      className="py-12 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
     >
       <StatisticsSection />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 relative inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 relative inline-block pt-8">
             Nos Réalisations Exceptionnelles
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary via-secondary to-primary" />
           </h2>

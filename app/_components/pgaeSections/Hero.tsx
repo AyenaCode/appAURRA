@@ -19,10 +19,8 @@ const HeroSection = () => (
     </div>
     <div className="container mx-auto text-center relative z-20 px-4">
       <h1 className="text-4xl sm:text-5xl md:text-6xl px-10 font-extrabold mb-6 leading-tight text-white">
-        AURRA{" "}
-        <Span className="text-transparent brightness-150">Communication</Span>,
-        votre Marketing{" "}
-        <Span className="text-transparent brightness-150">digital </Span>
+        AURRA <Span className="brightness-150">Communication</Span>, votre
+        Marketing <Span className="brightness-150">digital </Span>
         réussi
       </h1>
       <div>
