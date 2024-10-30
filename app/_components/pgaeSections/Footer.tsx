@@ -1,13 +1,13 @@
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Pin,
-  Twitter,
-  Youtube,
-} from "lucide-react";
-
 import Link from "next/link";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 interface SocialMediaProps {
   className?: string;
@@ -22,42 +22,49 @@ export const SocialMedia = ({ className, size }: SocialMediaProps) => {
         target="_blank"
         className="hover:text-blue-400"
       >
-        <Facebook size={size} />
+        <FaFacebook size={size} />
       </Link>
       <Link
         href="https://x.com/Aurracom"
         target="_blank"
         className="hover:text-blue-400"
       >
-        <Twitter size={size} />
+        <FaTwitter size={size} />
       </Link>
       <Link
         href="http://www.linkedin.com/in/aurra-com-6930b7327"
         target="_blank"
         className="hover:text-blue-400"
       >
-        <Linkedin size={size} />
+        <FaLinkedin size={size} />
       </Link>
       <Link
         href="https://www.instagram.com/aurra.com228/?igsh=MTJ0NzNjZ3R3eWY4Mg%3D%3D"
         target="_blank"
         className="hover:text-blue-400"
       >
-        <Instagram size={size} />
+        <FaInstagram size={size} />
       </Link>
       <Link
         href="https://www.youtube.com/@aurracommunication?si=Qq67vHrp9VaIctmb"
         target="_blank"
         className="hover:text-blue-400"
       >
-        <Youtube size={size} />
+        <FaYoutube size={size} />
       </Link>
       <Link
         href="https://pin.it/313mw4C1b"
         target="_blank"
         className="hover:text-blue-400"
       >
-        <Pin size={size} />
+        <FaPinterest size={size} />
+      </Link>
+      <Link
+        href="https://wa.me/22890423963"
+        target="_blank"
+        className="hover:text-blue-400"
+      >
+        <FaWhatsapp size={size} />
       </Link>
     </div>
   );
@@ -86,17 +93,20 @@ export const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-blue-400">
+              <Link href="/#faq" className="hover:text-blue-400">
                 La foire aux questions
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-blue-400">
+              <Link
+                href="/conditions-generales"
+                className="hover:text-blue-400"
+              >
                 Conditions generales
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-blue-400">
+              <Link href="/confidentialite" className="hover:text-blue-400">
                 Politques de confidentialité
               </Link>
             </li>

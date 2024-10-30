@@ -1,6 +1,6 @@
 "use client";
-import { GitBranch, Star, Users } from "lucide-react";
 import { useEffect, useState } from "react";
+import { FaCodeBranch, FaStar, FaUsers } from "react-icons/fa";
 
 interface Stat {
   Icon: React.ElementType;
@@ -9,9 +9,9 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { Icon: Users, value: 530, label: "Clients Satisfaits" },
-  { Icon: Star, value: 1800, label: "Votes Positifs" },
-  { Icon: GitBranch, value: 260, label: "Projets Réussis" },
+  { Icon: FaUsers, value: 530, label: "Clients Satisfaits" },
+  { Icon: FaStar, value: 1800, label: "Votes Positifs" },
+  { Icon: FaCodeBranch, value: 260, label: "Projets Réussis" },
 ];
 
 export const StatisticsSection = () => {

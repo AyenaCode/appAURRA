@@ -1,8 +1,8 @@
 "use client";
-import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Span } from "../elements/Span";
 import { SocialMedia } from "../pgaeSections/Footer";
 
@@ -61,7 +61,11 @@ export const Navbar = () => {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isOpen ? (
+            <FaTimes className="w-6 h-6" />
+          ) : (
+            <FaBars className="w-6 h-6" />
+          )}
         </button>
 
         <ul

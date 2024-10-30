@@ -1,6 +1,6 @@
 "use client";
-import { CornerRightUp } from "lucide-react";
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,10 +33,10 @@ export const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-8 right-4 z-50 bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-400 hover:to-violet-500 shadow-xl w-[50px] h-[50px] rounded-full cursor-pointer pl-[0.7rem] border-none"
+      className="fixed bottom-8 right-4 z-50 bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-400 hover:to-violet-500 shadow-xl w-[50px] h-[50px] rounded-full cursor-pointer flex items-center justify-center border-none"
       aria-label="Retour en haut de la page"
     >
-      <CornerRightUp className="text-white" />
+      <FaArrowUp className="text-white" />
     </button>
   );
 };

@@ -1,6 +1,6 @@
-import { ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 type Props = {
   Icon: React.ElementType;
@@ -20,7 +20,7 @@ export const ServiceCard = ({ Icon, title, description, href }: Props) => {
         className="bg-gradient-to-r from-white to-gray-300 text-blueColor px-4 py-2 rounded-full md:opacity-0 md:group-hover:opacity-100 md:transition-opacity md:duration-300 flex items-center"
       >
         Démarrer
-        <ArrowUpRightIcon className="w-6 h-6 ml-2" />
+        <FaArrowRight className="w-6 h-6 ml-2" />
       </Link>
     </div>
   );

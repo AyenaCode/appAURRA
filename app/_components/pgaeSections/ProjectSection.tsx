@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Card } from "../elements/Card";
 import { Span } from "../elements/Span";
 import { StatisticsSection } from "../marketing/Satatistic";
@@ -207,13 +207,13 @@ export const ProjectSection = () => {
             onClick={prevSlide}
             className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
           >
-            <ChevronLeft size={24} />
+            <FaChevronLeft size={24} />
           </button>
           <button
             onClick={nextSlide}
             className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
           >
-            <ChevronRight size={24} />
+            <FaChevronRight size={24} />
           </button>
         </div>
 
