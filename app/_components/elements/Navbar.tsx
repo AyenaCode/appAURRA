@@ -38,7 +38,7 @@ export const Navbar = () => {
   }, [isOpen]);
 
   const navLinkClass =
-    "text-violetColor hover:text-blueColor transition-colors duration-300";
+    "hover:text-violetColor text-blueColor transition-colors duration-300";
   const activeNavLinkClass = "text-white font-bold";
 
   const getLinkClass = (path: string) => {

@@ -1,4 +1,5 @@
-import { TestimonialCard } from "../elements/TestimonialCard";
+import { Container } from "../elements/Container";
+import { TestimonialCard } from "../marketing/TestimonialCard";
 
 export const TestimonialSection = () => {
   const testimonials = [
@@ -23,23 +24,21 @@ export const TestimonialSection = () => {
   ];
 
   return (
-    <section className="testimonials bg-base-200 py-24">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 text-base-content">
-          Ce que disent nos clients
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              text={testimonial.text}
-              author={testimonial.author}
-              role={testimonial.role}
-              portrait={testimonial.portrait}
-            />
-          ))}
-        </div>
+    <Container>
+      <h2 className="text-4xl font-bold text-center mb-4">
+        Ce que disent nos clients
+      </h2>
+      <div className="lg:flex gap-10">
+        {testimonials.map((testimonial, index) => (
+          <TestimonialCard
+            key={index}
+            text={testimonial.text}
+            author={testimonial.author}
+            role={testimonial.role}
+            portrait={testimonial.portrait}
+          />
+        ))}
       </div>
-    </section>
+    </Container>
   );
 };

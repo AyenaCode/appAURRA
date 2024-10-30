@@ -19,32 +19,44 @@ export const SocialMedia = ({ className, size }: SocialMediaProps) => {
     <div className={`flex justify-center space-x-4 ${className}`}>
       <Link
         href="https://www.facebook.com/people/AURRA-COM/61562884277635/?mibextid=ZbWKwL"
+        target="_blank"
         className="hover:text-blue-400"
       >
         <Facebook size={size} />
       </Link>
-      <Link href="https://x.com/Aurracom" className="hover:text-blue-400">
+      <Link
+        href="https://x.com/Aurracom"
+        target="_blank"
+        className="hover:text-blue-400"
+      >
         <Twitter size={size} />
       </Link>
       <Link
         href="http://www.linkedin.com/in/aurra-com-6930b7327"
+        target="_blank"
         className="hover:text-blue-400"
       >
         <Linkedin size={size} />
       </Link>
       <Link
         href="https://www.instagram.com/aurra.com228/?igsh=MTJ0NzNjZ3R3eWY4Mg%3D%3D"
+        target="_blank"
         className="hover:text-blue-400"
       >
         <Instagram size={size} />
       </Link>
       <Link
         href="https://www.youtube.com/@aurracommunication?si=Qq67vHrp9VaIctmb"
+        target="_blank"
         className="hover:text-blue-400"
       >
         <Youtube size={size} />
       </Link>
-      <Link href="https://pin.it/313mw4C1b" className="hover:text-blue-400">
+      <Link
+        href="https://pin.it/313mw4C1b"
+        target="_blank"
+        className="hover:text-blue-400"
+      >
         <Pin size={size} />
       </Link>
     </div>
