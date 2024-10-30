@@ -1,14 +1,14 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import {
-  Award,
-  Clock,
-  HeartHandshake,
-  Lightbulb,
-  Target,
-  Wallet,
-} from "lucide-react";
 import Link from "next/link";
+import {
+  FaAward,
+  FaBullseye,
+  FaClock,
+  FaHandshake,
+  FaLightbulb,
+  FaWallet,
+} from "react-icons/fa";
 import { Container } from "../elements/Container";
 import { Span } from "../elements/Span";
 
@@ -20,44 +20,44 @@ interface Reason {
 
 const reasons: Reason[] = [
   {
-    icon: Target,
+    icon: FaBullseye,
     title: "Expertise Ciblée",
     description:
       "Notre équipe d'experts comprend vos besoins spécifiques et développe des solutions sur mesure pour atteindre vos objectifs.",
   },
   {
-    icon: HeartHandshake,
+    icon: FaHandshake,
     title: "Engagement Total",
     description:
       "Nous nous investissons pleinement dans votre réussite, en traitant chaque projet comme s'il s'agissait du nôtre.",
   },
   {
-    icon: Clock,
+    icon: FaClock,
     title: "Réactivité 24/7",
     description:
       "Notre équipe est disponible en permanence pour répondre à vos besoins et assurer le succès de vos projets.",
   },
   {
-    icon: Award,
+    icon: FaAward,
     title: "Excellence Reconnue",
     description:
       "Notre travail est reconnu pour sa qualité exceptionnelle et notre capacité à dépasser les attentes.",
   },
   {
-    icon: Lightbulb,
+    icon: FaLightbulb,
     title: "Innovation Continue",
     description:
       "Nous restons à la pointe des dernières tendances et technologies pour vous offrir les meilleures solutions.",
   },
   {
-    icon: Wallet,
+    icon: FaWallet,
     title: "Rapport Qualité-Prix",
     description:
       "Nous offrons des services premium à des tarifs compétitifs, garantissant un excellent retour sur investissement.",
   },
 ];
 
-export const HowChooseUs = () => {
+export const WhyChooseUs = () => {
   return (
     <Container className="pb-16">
       <div className="text-center mb-12">
