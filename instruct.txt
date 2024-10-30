@@ -1,1 +1,9 @@
 enlève les annimations et converti le code et ts sans utiliser react.FC
+
+
+Ces modifications vont :
+Améliorer le référencement naturel
+Optimiser le partage sur les réseaux sociaux
+Faciliter l'indexation par les moteurs de recherche
+Fournir des métadonnées riches et pertinentes
+Générer automatiquement le sitemap et le fichier robots.txt
