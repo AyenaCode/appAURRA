@@ -37,7 +37,7 @@ const HeroSection = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="relative min-h-[150px]">
+          <div className="relative min-h-[200px] md:min-h-[150px]">
             {/* Premier paragraphe */}
             <div
               className={`absolute inset-0 p-6 backdrop-blur-sm bg-white/10 rounded-xl border border-white/20 
