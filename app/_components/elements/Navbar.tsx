@@ -55,7 +55,7 @@ export const Navbar = () => {
         <Link href="/" className="text-xl font-bold" onClick={closeMenu}>
           <Span>AURRA</Span>
         </Link>
-        <SocialMedia className="space-x-6 md:space-x-4 text-violetColor" />
+        <SocialMedia className="space-x-2 md:space-x-4 text-violetColor" />
         <button
           className="md:hidden bg-transparent text-blueColor"
           onClick={toggleMenu}
