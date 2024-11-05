@@ -16,7 +16,7 @@ interface SocialMediaProps {
 
 export const SocialMedia = ({ className, size }: SocialMediaProps) => {
   return (
-    <div className={`flex justify-center space-x-4 ${className}`}>
+    <div className={`flex justify-center ${className}`}>
       <Link
         href="https://www.facebook.com/people/AURRA-COM/61562884277635/?mibextid=ZbWKwL"
         target="_blank"
@@ -117,7 +117,7 @@ export const Footer = () => {
             Suivez-nous
           </h3>
 
-          <SocialMedia size={24} />
+          <SocialMedia size={24} className="space-x-4" />
         </div>
       </div>
       <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
