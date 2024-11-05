@@ -25,6 +25,10 @@ export const defaultMetadata = {
   keywords: [
     "communication digitale",
     "marketing digital",
+    "Développement web",
+    "Développement mobile",
+    "Développement d'application",
+    "SEO",
     "événementiel",
     "recrutement",
     "formation",
