@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 import { defaultMetadata } from "./metadata";
 
@@ -13,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="min-h-screen">
+          {children}
+          <Toaster richColors position="top-center" />
+        </main>
+      </body>
     </html>
   );
 }

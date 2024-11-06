@@ -12,4 +12,6 @@ export const metadata: Metadata = {
 };
 
 import { ContactPage } from "./ContactPage";
-export default ContactPage;
+export default function Page() {
+  return <ContactPage />;
+}
