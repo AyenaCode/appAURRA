@@ -46,9 +46,7 @@ const ServicesPage = () => {
                     title={service.title}
                     description={service.description}
                     Icon={IconComponent}
-                    detailLink={`/services/${service.title
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}`}
+                    detailLink={`/services/${service.href}`}
                   />
                 );
               })}

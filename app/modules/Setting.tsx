@@ -26,14 +26,14 @@ export const services = [
     title: "Contenu et réseaux sociaux",
     description:
       "Nous créons du contenu original et engageant pour vos réseaux sociaux, en se concentrant sur l'engagement des auditoires.",
-    href: "/communication",
+    href: "/marketing-digital",
   },
   {
     icon: FaGlobe,
     title: "Marketing digital",
     description:
       "Nous utilisons des outils de marketing digital pour atteindre un public cible spécifique et augmenter la visibilité de votre marque.",
-    href: "/communication",
+    href: "/marketing-digital",
   },
   {
     icon: FaCode,
@@ -60,28 +60,28 @@ export const services = [
     title: "Planification et organisation d'événements",
     description:
       "De la conception à l'exécution, nous assurons la réussite de vos événements.",
-    href: "/événementiel",
+    href: "/evenementiel",
   },
   {
     icon: FaRocket,
     title: "Lancements de produits",
     description:
       "Créez un impact durable avec des lancements de produits bien planifiés et exécutés.",
-    href: "/événementiel",
+    href: "/evenementiel",
   },
   {
     icon: FaBox,
     title: "Coordination logistique",
     description:
       "Assurez-vous que chaque détail logistique est pris en charge, du début à la fin.",
-    href: "/événementiel",
+    href: "/evenementiel",
   },
   {
     icon: FaUserTie,
     title: "Recrutement et sélection",
     description:
       "Trouvez les meilleurs talents grâce à notre expertise en recrutement et sélection.",
-    href: "/emploi",
+    href: "/recrutement",
   },
   {
     icon: FaSchool,
@@ -95,7 +95,7 @@ export const services = [
     title: "Audiovisuel",
     description:
       "Nous réalisons des vidéos pour vos événements, des clips vidéo pour vos artistes préférés, des animations 3D pour vos projets.",
-    href: "/audiovisuel",
+    href: "/graphisme",
   },
 ];
 
@@ -136,7 +136,7 @@ export const servicesPage = [
 
   {
     title: "Événementiel",
-    href: "/services/événementiel",
+    href: "/services/evenementiel",
     description: "Planification et organisation d'événements",
     icon: "🎉",
   },

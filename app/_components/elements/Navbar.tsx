@@ -12,6 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTurnDown } from "react-icons/fa6";
 import { Span } from "../elements/Span";
 import { SocialMedia } from "../pgaeSections/Footer";
 
@@ -91,8 +92,17 @@ export const Navbar = () => {
           </li>
           <li>
             <NavigationMenu>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+              <NavigationMenuItem className="flex items-center gap-1">
+                <Link
+                  href="/services"
+                  className={getLinkClass("/services")}
+                  onClick={closeMenu}
+                >
+                  Services
+                </Link>
+                <NavigationMenuTrigger className="bg-transparent hover:bg-transparent px-1">
+                  <FaTurnDown className="h-6 text-blueColor" />
+                </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="fixed left-1/2 transform -translate-x-1/2 z-50 bg-white dark:bg-gray-900 rounded-lg shadow-lg max-h-[80vh] overflow-y-auto">
                     <ul className="grid w-[90vw] max-w-[800px] gap-3 p-4 md:grid-cols-2 lg:grid-cols-3">
