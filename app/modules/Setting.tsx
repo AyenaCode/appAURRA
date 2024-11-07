@@ -98,3 +98,64 @@ export const services = [
     href: "/audiovisuel",
   },
 ];
+
+export const servicesPage = [
+  {
+    title: "Graphisme",
+    href: "/services/graphisme",
+    description:
+      "Design graphique et création visuelle pour votre identité de marque",
+    icon: "🎨",
+  },
+  {
+    title: "Communication",
+    href: "/services/communication",
+    description: "Stratégie de communication sur mesure",
+    icon: "💬",
+  },
+  {
+    title: "Développement Web",
+    href: "/services/developpement-web",
+    description:
+      "Création de sites web et applications performants et modernes",
+    icon: "💻",
+  },
+  {
+    title: "Marketing Digital",
+    href: "/services/marketing-digital",
+    description: "Stratégies marketing et solutions digitales sur mesure",
+    icon: "📱",
+  },
+
+  {
+    title: "Recrutement",
+    href: "/services/recrutement",
+    description: "Recrutement et sélection de talents",
+    icon: "👥",
+  },
+
+  {
+    title: "Événementiel",
+    href: "/services/événementiel",
+    description: "Planification et organisation d'événements",
+    icon: "🎉",
+  },
+  {
+    title: "Audiovisuel",
+    href: "/services/graphisme",
+    description: "Production et montage vidéo de qualité",
+    icon: "🎥",
+  },
+  {
+    title: "Formation",
+    href: "/services/formation",
+    description: "Formations sur mesure pour votre équipe",
+    icon: "🎓",
+  },
+  {
+    title: "SEO",
+    href: "/services/seo",
+    description: "Optimisation de votre site web pour les moteurs de recherche",
+    icon: "🔍",
+  },
+];
