@@ -13,12 +13,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+
 model Contact {
-  id        Int      @id @default(autoincrement())
+  id        String   @id @default(cuid())
   name      String
   email     String
   message   String
-  createdAt DateTime @default(now()) @map("created_at")
-
-  @@map("contacts")
+  createdAt DateTime @default(now())
 }

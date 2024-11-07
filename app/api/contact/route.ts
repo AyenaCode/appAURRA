@@ -1,11 +1,12 @@
-import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
-    const { name, email, message } = await request.json();
+    const body = await request.json();
+    const { name, email, message } = body;
 
-    // Validation basique
+    // Validation des données
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Tous les champs sont requis" },
@@ -13,7 +14,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Création du contact dans la base de données
     const contact = await prisma.contact.create({
       data: {
         name,
@@ -22,14 +22,11 @@ export async function POST(request: Request) {
       },
     });
 
-    return NextResponse.json(
-      { message: "Contact enregistré avec succès", contact },
-      { status: 201 }
-    );
+    return NextResponse.json(contact, { status: 201 });
   } catch (error) {
-    console.error("Erreur:", error);
+    console.error("Erreur lors de la création du contact:", error);
     return NextResponse.json(
-      { error: "Erreur lors de l'enregistrement du contact" },
+      { error: "Erreur lors de la création du contact" },
       { status: 500 }
     );
   }
