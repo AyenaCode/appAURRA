@@ -159,3 +159,12 @@ export const servicesPage = [
     icon: "🔍",
   },
 ];
+
+//Navigation
+export const navItems = [
+  { name: "Accueil", href: "/" },
+  { name: "Services", href: "/services" },
+  { name: "Nos projets", href: "/#projects" },
+  { name: "A propos", href: "/a-propos" },
+  { name: "Contact", href: "/contact" },
+];
