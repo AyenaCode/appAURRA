@@ -62,7 +62,9 @@ export const Navbar = () => {
           <Span>AURRA</Span>
         </Link>
         <SocialMedia className="space-x-2 lg:space-x-6 text-violetColor" />
+
         <MobileMenu />
+
         <ul
           className={`md:flex space-x-6 font-semibold items-center transition-all duration-300 ${
             isOpen
@@ -70,22 +72,31 @@ export const Navbar = () => {
               : "hidden"
           } md:relative md:bg-transparent md:p-0 md:flex`}
         >
-          <li>
-            <ServiceNav />
-          </li>
-          {navItems.map((link) => (
-            <li key={link.name}>
-              <Link
-                href={link.href}
-                className={cn(
-                  "hover:text-violetColor text-blueColor transition-colors duration-300",
-                  { "text-white font-bold": pathname === link.href }
-                )}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
+          {navItems.map((link) => {
+            // Condition pour injecter les services si link.name est "Services"
+            if (link.name === "Services") {
+              return (
+                <ServiceNav
+                  key="services"
+                  className="text-blueColor font-bold text transition-colors duration-300"
+                />
+              );
+            }
+
+            return (
+              <li key={link.name}>
+                <Link
+                  href={link.href}
+                  className={cn(
+                    "hover:text-violetColor text-blueColor transition-colors duration-300",
+                    { "text-white font-bold": pathname === link.href }
+                  )}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>

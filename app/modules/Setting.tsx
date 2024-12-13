@@ -1,12 +1,9 @@
 import {
-  FaBox,
-  FaBullhorn,
   FaCalendar,
   FaCamera,
   FaCode,
   FaGlobe,
   FaPalette,
-  FaRocket,
   FaSchool,
   FaSearch,
   FaShareAlt,
@@ -34,6 +31,13 @@ export const services = [
     description:
       "Votre site ou application web sur mesure pour répondre à vos besoins spécifiques.",
     href: "/developpement-web",
+  },
+  {
+    icon: FaSearch,
+    title: "SEO",
+    description:
+      "Optimisez votre site web pour les moteurs de recherche et améliorez votre visibilité.",
+    href: "/seo",
   },
   {
     icon: FaPalette,
@@ -135,7 +139,7 @@ export const servicesPage = [
 //Navigation
 export const navItems = [
   { name: "Accueil", href: "/" },
-  { name: "Services", href: "/services" },
+  { name: "Services", href: "/" },
   { name: "Nos projets", href: "/#projects" },
   { name: "A propos", href: "/a-propos" },
   { name: "Contact", href: "/contact" },
