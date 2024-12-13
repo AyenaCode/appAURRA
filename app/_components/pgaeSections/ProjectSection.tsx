@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type JSX } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Card } from "../elements/Card";
 import { Span } from "../elements/Span";

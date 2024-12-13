@@ -8,6 +8,26 @@ import Link from "next/link";
 import { FaChartLine, FaRocket, FaUsers } from "react-icons/fa";
 
 const ServicesPage = () => {
+  const whyChooseUseValue = [
+    {
+      icon: FaRocket,
+      title: "Expertise Pointue",
+      description:
+        "Notre équipe d'experts maîtrise les dernières tendances et technologies du marketing digital.",
+    },
+    {
+      icon: FaChartLine,
+      title: "Résultats Mesurables",
+      description:
+        "Nous nous engageons à fournir des résultats concrets et mesurables pour votre entreprise.",
+    },
+    {
+      icon: FaUsers,
+      title: "Approche Personnalisée",
+      description:
+        "Chaque stratégie est conçue sur mesure pour répondre à vos objectifs spécifiques.",
+    },
+  ];
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen">
       <Navbar />
@@ -38,11 +58,11 @@ const ServicesPage = () => {
               Nos Services Détaillés
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {services.map((service, index) => {
+              {services.map((service) => {
                 const IconComponent = service.icon;
                 return (
                   <ServiceCardElement
-                    key={index}
+                    key={service.title}
                     title={service.title}
                     description={service.description}
                     Icon={IconComponent}
@@ -60,26 +80,7 @@ const ServicesPage = () => {
               Pourquoi choisir nos services ?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: FaRocket,
-                  title: "Expertise Pointue",
-                  description:
-                    "Notre équipe d'experts maîtrise les dernières tendances et technologies du marketing digital.",
-                },
-                {
-                  icon: FaChartLine,
-                  title: "Résultats Mesurables",
-                  description:
-                    "Nous nous engageons à fournir des résultats concrets et mesurables pour votre entreprise.",
-                },
-                {
-                  icon: FaUsers,
-                  title: "Approche Personnalisée",
-                  description:
-                    "Chaque stratégie est conçue sur mesure pour répondre à vos objectifs spécifiques.",
-                },
-              ].map((item, index) => (
+              {whyChooseUseValue.map((item, index) => (
                 <div
                   key={index}
                   className="bg-gray-50 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:-translate-y-1"
