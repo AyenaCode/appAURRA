@@ -16,62 +16,62 @@ export const services = [
     title: "Stratégie de communication",
     description:
       "Nous développons des plans de communication sur mesure pour aligner vos objectifs commerciaux avec des stratégies efficaces.",
-    href: "/communication",
+    href: "/services/communication",
   },
   {
     icon: FaGlobe,
     title: "Marketing digital",
     description:
       "Nous utilisons des outils de marketing digital pour atteindre un public cible spécifique et augmenter la visibilité de votre marque.",
-    href: "/marketing-digital",
+    href: "/services/marketing-digital",
   },
   {
     icon: FaCode,
     title: "Développement web",
     description:
       "Votre site ou application web sur mesure pour répondre à vos besoins spécifiques.",
-    href: "/developpement-web",
+    href: "/services/developpement-web",
   },
   {
     icon: FaSearch,
     title: "SEO",
     description:
       "Optimisez votre site web pour les moteurs de recherche et améliorez votre visibilité.",
-    href: "/seo",
+    href: "/services/seo",
   },
   {
     icon: FaPalette,
     title: "Graphisme",
     description: "Nous créons des visuels graphiques pour votre entreprise.",
-    href: "/graphisme",
+    href: "/services/graphisme",
   },
   {
     icon: FaCalendar,
     title: "Planification et organisation d'événements",
     description:
       "De la conception à l'exécution, nous assurons la réussite de vos événements.",
-    href: "/evenementiel",
+    href: "/services/evenementiel",
   },
   {
     icon: FaUserTie,
     title: "Recrutement et sélection",
     description:
       "Trouvez les meilleurs talents grâce à notre expertise en recrutement et sélection.",
-    href: "/recrutement",
+    href: "/services/recrutement",
   },
   {
     icon: FaSchool,
     title: "Coaching et formation",
     description:
       "Améliorez les compétences de votre équipe avec des programmes de coaching et de formation personnalisés.",
-    href: "/formation",
+    href: "/services/formation",
   },
   {
     icon: FaCamera,
     title: "Audiovisuel",
     description:
       "Nous réalisons des vidéos pour vos événements, des clips vidéo pour vos artistes préférés, des animations 3D pour vos projets.",
-    href: "/graphisme",
+    href: "/services/graphisme",
   },
 ];
 
@@ -130,7 +130,7 @@ export const servicesPage = [
   },
   {
     title: "SEO",
-    href: "/services/seo",
+    href: "/services/SEO",
     description: "Optimisation de votre site web pour les moteurs de recherche",
     icon: "🔍",
   },
